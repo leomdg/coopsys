@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	* {
+		font-family: Helvetica, Arial, serif;
+	}
+	#index {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 50px;
+		border-bottom: 2px solid #ccc;
+		background-color: #eee;
+		z-index: 2;
+	}
+	#index ul {
+		list-style-type: none;
+	}
+	#index ul li {
+		display: inline;
+		margin: 0 0.5em;
+	}
+	#index ul li a {
+		padding: 0.25em;
+		text-decoration: none;
+		font-weight: bold;
+		color: #333;
+	}
+	#index ul li a:hover {
+		text-decoration: underline
+	}
+	#index ul li a img {
+		position: relative;
+		display: inline;
+		float: left;
+		top: 0;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		margin: 0;
+		padding: 0;
+	}
+	#content {
+		position: absolute;
+		top: 50px;
+		z-index: 1;
+	}
+	h1, h2, h3, h4 {
+		text-align: center;
+		font-variant: small-caps;
+	}
+	h3, h4 {
+		text-align: left;
+	}
+	h3, h4, p, img {
+		width: 90%;
+		margin: 1%;
+		padding: 1%;
+	}
+	h3, h4 {
+		margin: 0.1%;
+	}
+	p {
+		width: 60%;
+		font-size: 15px;
+		color: #333;
+	}
+	p span {
+		font-weight: bold;
+		font-style: italic;
+	}
+	img {
+		max-width: 1423px;
+		border: 1px solid #eee;
+	}
+</style>
+</head>
+<body>
+
+<div id="index">
+	<ul>
+		<li><a href="#content"><img src="index.gif" alt="&Iacute;ndice" /></a></li>
+		<li><a href="#title1">Autenticaci&oacute;n</a></li>
+		<li><a href="#title2">Perfil de Usuario</a></li>
+		<li><a href="#title3">Panel de Control</a></li>
+		<li><a href="#title4">Alertas</a></li>
+		<li><a href="#title5">Personal</a></li>
+		<li><a href="#title6">Clientes</a></li>
+		<li><a href="#title7">&Oacute;rdenes de Trabajo (O/Ts)</a></li>
+		<li><a href="#title8">Materiales</a></li>
+		<li><a href="#title9">Consultas</a></li>
+	</ul>
+</div>
+
+<div id="content">
+
+<h1>Gu&iacute;a de Usuario</h1>
+<h2>Sistema de Auditor&iacute;a Integral COOPERTEI</h2>
+
+<h3 id="title1">Autenticaci&oacute;n</h3>
+
+<p>
+El sistema da la bienvenida requiriendo la autenticaci&oacute;n por parte del usuario.<br />
+Notar que cada usuario pertenece a un rol, lo cual limita o permite las funcionalidades del sistema.<br />
+Utilizaremos el usuario con m&aacute;s permisos para poder acceder a la totalidad de la aplicaci&oacute;n.<br />
+<span>Ingrese su usuario y constrase&ntilde;a; luego haga click en [Ingresar].</span>
+</p>
+<img src="img/(1).png" />
+
+<p>
+El sistema da la bienvenida mostrando la pantalla de Alertas de O/Ts, pero empezaremos accediendo al Perfil del Usuario.<br />
+<span>Haga click en su nombre de usuario, ubicado arriba a la derecha. Este lo llevar&aacute; a su Perfil.</span>
+</p>
+
+<h3 id="title2">Perfil de Usuario</h3>
+
+<p>
+En este m&oacute;dulo de la aplicaci&oacute;n usted podr&aacute; personalizar su usuario completando sus datos personales: Nombre, Apellido, Tel&eacute;fono particular y Correo electr&oacute;nico.<br />
+Tambi&eacute;n podr&aacute; cambiar su contrase&ntilde;a de acceso al sistema cuando lo desee (ambos campos de este formulario deben coindicir).<br />
+<span>Para modificar cualquiera de estos datos, complete los campos de texto y haga click en [Guardar] para cada formulario en cuesti&oacute;n.</span><br />
+Adicionalmente se muestra su Legajo, su &Aacute;rea de operaci&oacute;n y su Interno telef&oacute;nico.
+</p>
+<img src="img/(2).png" />
+
+<h3 id="title3">Panel de Control</h3>
+
+<p>
+En el Panel de Control se encuentran todas las entidades básicas para operar la aplicación: Personas, Usuarios, Mótivos de Internvención, Tareas, Categorías de Materiales y Equipos.<br />
+Antes de poder empezar a utilizar el sistema correctamente, debe existir un mínimo de entidades creadas, de lo contrario no será posible realizar las acciones pertinentes de auditoría hacia las O/Ts o Pedidos de Materiales por ejemplo.<br />
+Adicionalmente, existen relaciones de dependencia entre distintas entidades. Por ejemplo: al crear un Usuario se necesita de una Persona existente.
+</p>
+
+<h4>Personas</h4>
+<p>
+Son la entidad básica de la aplicación.<br />
+<span>Para crear una Persona, complete Nombre, Apellido, Teléfono particular y Mail.</span>
+</p>
+<img src="img/(3).png" />
+
+<h4>Usuarios</h4>
+<p>
+Son necesarios para interactuar con la aplicación. Idealmente, cada Persona (léase: empleado) debería tener asociado un Usuario.<br />
+<span>Para crear un Usuario, complete Nombre de Usuario a elección, la Persona/Empleado a asociar al Usuario, su Rol dentro de la aplicación y su Área de trabajo dentro de COOPERTEI.</span>
+</p>
+<img src="img/(4).png" />
+
+<h4>Intervenciones</h4>
+<p>
+Son los motivos por los cuales se crean Órdenes de Trabajo. Representan las "categorías" en las que caen los Equipos al ser construídos o reparados.<br />
+Cada O/T debe tener un Motivo de Intervención asociado.<br />
+<span>Para crear un Motivo de Intervención, simplemente complete Nombre y una Descripción.</span>
+</p>
+<img src="img/(5).png" />
+
+<h4>Tareas</h4>
+<p>
+Cada O/T está conformada por Tareas, o mejor dicho, por Planes de Tareas que luego serán abordados más adelante.<br />
+En este módulo se crean las Tareas que luego serán incluídas en los Planes de Tareas a ser asociados a las O/Ts.<br />
+<span>Para crear una Tarea, complete su Nombre, Descripción y el Área donde esa Tarea suele tomar lugar en COOPERTEI.</span>
+</p>
+<img src="img/(6).png" />
+
+<h4>Categor&iacute;as de Materiales</h4>
+<p>
+Como su nombre lo indica, representan grupos de materiales bien definidos. Son necesarias para organizar el stock de Materiales dentro de la aplicación.<br />
+<span>Para crear una Categoría, sólo se necesita completar su Nombre deseado.</span>
+</p>
+<img src="img/(7).png" />
+
+<h4>Equipos</h4>
+<p>
+Es la entidad que representa tanto los equipos a ser construídos como los equipos que ingresan para su refacción.<br />
+Más complejas que las demás entidades, los Equipos poseen dos relaciones: el motivo por el cual ingresaron a la planta o por el cual serán construídos y el Cliente al que están asociados.<br />
+<span>Para crear un Equipo, complete su Nombre o TAG, el Motivo de Intervención por el cual ingresa o se construye y el Cliente.</span>
+</p>
+<img src="img/(8).png" />
+
+<h3 id="title4">Alertas</h3>
+
+<h4>O/Ts</h4>
+<p>
+Este listado contiene avisos de vencimiento de entrega de O/Ts. Los colores indican cercanía de vencimiento, o en el caso del negro, vencimiento efectivo.
+</p>
+<img src="img/(9).png" />
+
+<p>
+Al seleccionar una O/T, se muestran sus detalles y la posibilidad de ir directamente a su Auditoría (abordado más adelante).<br />
+<span>Para auditar una O/T, haga click en [Auditar O/T].</span>
+</p>
+<img src="img/(10).png" />
+
+<p>
+Esta pantalla también contiene un listado de Novedades en tiempo real, el cual comunica operaciones relacionadas a las Tareas de las O/Ts.<br />
+También se puede acceder a la O/T en cuestión haciendo click en el vínculo de color verde claro de cada novedad.
+</p>
+<img src="img/(11).png" />
+
+<h4>Tareas</h4>
+<p>
+Además de aparecer listadas las Tareas en el cuadro de Novedades, siempre estarán disponibles al ser compleadas en la siguiente pantalla de Alertas de Tareas.<br />
+Mismo funcionamiento que las Alertas de O/Ts.<br />
+<span>Para Auditar la O/T relacionada a la Tarea en cuestión, haga click en [Auditar O/T].</span>
+</p>
+<img src="img/(12).png" />
+
+<h3 id="title5">Personal</h3>
+
+<p>
+El siguiente módulo abarca la administración del Personal de COOPERTEI.<br />
+Tanto la Nómina como las Entradas y Salidas de planta pueden ser registradas en estas pantallas.<br />
+También se guarda un Historial de las Entradas y Salidas para posibles consultas.
+</p>
+<img src="img/(13).png" />
+
+<h4>Nómina de Empleados</h4>
+<p>
+<span>Para agregar un Empleado a la Nómina, complete su Legajo, elija al Empleado desde el menú desplegable, elija su Área de trabajo, Horario de Entrada y Salida e Interno telefónico.</span>
+</p>
+<img src="img/(14).png" />
+
+<h4>Entradas y Salidas</h4>
+<p>
+Desde la siguiente pantalla se registran las Entradas y Salidas de los Empleados.
+</p>
+<img src="img/(15).png" />
+
+<p>
+<span>Para registrar una Entrada/Salida, elija el Empleado en cuestión y complete el día y horario de Salida y el día y horario tentativo de Entrada.<br />También se puede especificar si así se desea, si el Empleado está autorizado a efectuar la Salida.</span>
+</p>
+<img src="img/(16).png" />
+
+<p>
+Al momento del Empleado efectuando la Salida, el usuario a cargo de la administración de las Entradas/Salidas debe tildar como la imágen lo indica, el Egreso de dicho Empleado para la Fecha y Hora autorizada. La aplicación pedirá confirmación y luego se registrará la fecha y horario de ese momento. Adicionalmente habilitará la efectivización del Reingreso al aparecer la última columna como tildable.<br />
+<span>Para efectuar el Egreso de un Empleado, haga click en tilde correspondiente a la columna [Egreso], en la fila correspondiente al Empleado en cuestión y al día y horario autorizados.</span>
+</p>
+<img src="img/(17).png" />
+
+<img src="img/(18).png" />
+
+<p>
+<span>Para efectuar el Reingreso de un Empleado, haga click en tilde correspondiente a la columna [Reingreso], en la fila correspondiente al Empleado en cuestión y al día y horario autorizados.</span>
+</p>
+<img src="img/(19).png" />
+
+<img src="img/(20).png" />
+
+<p>
+El Historial mantendrá registradas todas las Entradas y Salidas efectivizadas.
+</p>
+<img src="img/(21).png" />
+
+<h3 id="title6">Clientes</h3>
+
+<h4>Nómina</h4>
+<p>
+La Nómina de Clientes funciona de la misma manera que la Nómina de Empleados, aunque posea más datos a completar.<br />
+<span>Para crear un Cliente o editarlo, complete su Nombre o Razón Social, el Usuario de COOPERTEI que generalmente interactúa con dicho Cliente, un TAG que represente al Cliente, su C.U.I.T., su reponsabilidad ante el I.V.A., su Dirección, Número, Piso, Departamento, Ciudad y por último un Email de contacto y sobre todo al cual le llegarán las notificaciones al Cliente (por ejemplo: Autorizaciones necesarias de O/Ts).</span>
+</p>
+<img src="img/(22).png" />
+
+<h4>Autorizaciones</h4>
+<p>
+Aquí se listan las O/Ts en los distintos estados por los que pasan: Inaugurada (esto ocurre al crear una O/T; abordado más adelante), Notificado/En espera (Cliente notificado en espera de autorización para comenzar a trabajar la O/T), Tiempo Excedido (para el cual se puede Reenviar el Mail enviado al Cliente) y Autorizada (el Cliente ya confirmó su autorización desde la interfaz de Cliente, abordada más adelante).
+</p>
+<img src="img/(23).png" />
+
+<h4>Informes de Requerimientos</h4>
+<p>
+En cualquier momento de la vida de la O/T se puede conformar su Informe de Requerimientos y envíarlo a la casilla de correo configurada en el Cliente.<br />
+<span>Para completar el Informe de Requerimientos, seleccione una O/T y haga click en [Informe de Requerimientos].</span><br />
+Si la O/T no tiene un Plan de Tareas asociados, se le pedirá realizar esa operación ahora para poder detallar cada una de las Tareas involucradas.
+</p>
+<img src="img/(23)1.png" />
+
+<p>
+En el Informe se pueden detallar cada Tarea perteneciente al Plan de Tareas de esa O/T.
+</p>
+<img src="img/(23)2.png" />
+
+<img src="img/(23)3.png" />
+
+<p>
+Además, se pueden adjuntar fotografías pertinentes al estado del equipo o cualquier plano o archivo que sea necesario para una mejor comprensión del Informe por parte del Cliente.<br />
+<span>Para agregar hasta cinco (5) imágenes, haga click en cada uno de los botones para elegir archivos y adjunte de a una las imágenes necesarias.</span><br />
+La aplicación subirá las imágenes al servidor e imprimirá un tilde verde cuando se haya completado la operación.
+<span>Una vez completado el informe, haga click en [Guardar cambios].</span>
+</p>
+<img src="img/(23)4.png" />
+
+<p>
+Luego, se podrán visualizar en todo momento de la vida de la O/T tanto los detalles de las Tareas como las fotografías adjuntadas al Informe.
+<span>Cuando desee enviar el Informe de Requerimientos al Cliente, haga click en [ENVIAR AL CLIENTE].</span>
+</p>
+<img src="img/(23)5.png" />
+
+<p>
+<span>Para reenviar el mail de notificación al Cliente, seleccione la O/T pertinente y aparecerá el enlace correspondiente.<br />El sistema pedirá confirmación previa al envío.</span>
+</p>
+<img src="img/(24).png" />
+
+<p>
+También es posible Autorizar una O/T directamente, sin aviso o autorización del Cliente, ya sea por tratarse de una O/T interna a COOPERTEI o por las razones que se presenten.<br />
+<span>Para Autorizar manualmente una O/T para su auditoría, seleccione la O/T deseada y haga click en [Autorizar O/T].</span>
+</p>
+<img src="img/(25).png" />
+
+<p>
+Luego, la O/T aparecerá listada en la pantalla de Auditoría de Órdenes de Trabajo, para poder empezar a completar sus Tareas de su Plan de Tareas asociado previamente, al crear la O/T (aboradado a continuación).
+</p>
+<img src="img/(26).png" />
+
+<p>
+El Historial de Autorización listará las O/Ts que ya se concluyeron y no se necesitan en la pantalla de Auditoría.<br />
+A continuación trataremos la Auditoría íntegra de O/Ts y su conclusión.
+</p>
+<img src="img/(27).png" />
+
+<h3 id="title7">&Oacute;rdenes de Trabajo (O/Ts)</h3>
+
+<p>
+Este es el módulo más importante de toda la aplicación.<br />
+Desde aquí se realizan la Administración (Creación, Edición y Conclusión) y la Auditoría de las Órdenes de Trabajo.<br />
+También, previamente, se crean los Planes de Tareas que luego se asocian a las O/Ts y representan el cuerpo interactivo de las O/Ts.<br />
+Por último se listan históricamente las O/Ts concluídas.
+</p>
+
+<h4>Planes de Tareas</h4>
+<p>
+<span>Para crear un nuevo Plan de Tareas, complete su Nombre y Descripción.<br />
+Para agregar Tareas al plan, comience a escribir sus nombres en el último campo del formulario y la aplicación le ofrecerá alternativas seleccionables.<br />
+Puede seleccionar las Tareas ofrecidas haciendo click o navegando el listado con las flechas de dirección el teclado y presionando [Enter] para agregar una Tarea al listado que conformará el Plan de Tareas en cuestión.</span><br />
+Estás serán luego listadas al Auditar la O/T. Las mismas podrán ser Completadas o Retrabajadas.
+</p>
+<img src="img/(28).png" />
+
+<p>
+<span>Para editar un Plan de Tareas existente, seleccionelo y borre tareas listadas o agregue nuevas tareas de la misma forma que al crear el Plan.</span>
+</p>
+<img src="img/(29).png" />
+
+<h4>Administración</h4>
+<p>
+Desde esta pantalla se Inauguran las O/Ts para luego auditarlas interactuando con su Plan de Tareas.<br />
+<span>Para crear/inaugurar una O/T, ingrese (opcionalmente) la O/T del Cliente (la O/T principal es cargada automáticamente por el sistema).<br />
+Luego elija el Cliente relacionado, el Equipo/TAG o ingrese uno nuevo en el campo de texto alternativo.<br />
+A continuación, seleccione la Fecha de Entrega/Vencimiento de la O/T y el Motivo de Intervención para con el Equipo seleccionado previamente.<br />
+También puede ingresar Sugerencias u Observaciones tanto para el Taller como para el Cliente.<br />
+En el siguiente menú desplegable debe seleccionar el Plan de Tareas tentativo creado previamente sobre el cual se trabajará la O/T completando sus tareas.<br />
+Por último se puede indicar si la O/T siendo creada es un Retrabajo de otra O/T, ingresando su número en el siguiente campo.<br />
+Adicionalmente, se puede elegir notificar o no al Cliente del progreso de la O/T en cuestión.
+</span>
+</p>
+<img src="img/(30).png" />
+
+<p>
+<span>Para editar una O/T, selecciónela y modifique los campos deseados en el formulario, luego haga click en [Guardar].</span>
+</p>
+<img src="img/(31).png" />
+
+<h4>Seguimiento</h4>
+<p>
+En la siguiente pantalla ocurre el proceso más complejo del sistema: la Auditoría de Órdenes de Trabajo.<br />
+Desde aquí se puede visualizar el progreso de cada O/T, sus retrabajos, vencimientos, fechas de entrega y datos relacionados.
+</p>
+<img src="img/(32).png" />
+
+<p>
+En este punto, las O/Ts ya fueron Inauguradas y poseen un Plan de Tareas asociados, listo para ser afectado por el progreso de su O/T.<br />
+Nótese que un mismo Plan de Tareas tentativo puede ser asociado a múltiples O/Ts debido a la similitud entre procedimientos de reparación o directamente, de equipos. Claro que todo depende del nivel de detalle con el que se crean los Planes de Tareas y sus Tareas.).<br />
+<span>Para interactuar con una Tarea, seleccione una O/T del listado y se abrirá el Plan de Tareas asociado.<br />Luego podrá seleccionar una Tarea haciendo click en ellas.</span><br />
+Se pueden visualizar más de una O/T a la vez o cerrarlas para más comodidad de trabajo.
+</p>
+<img src="img/(33).png" />
+
+<p>
+<span>Para completar una Tarea simplemente tilde la Tarea deseada.</span><br />
+El sistema le pedirá que complete un reporte sobre el desarrollo de la Tarea, en el cual deberá detallar los Empleados que participaron en su completitud como también las horas invertidas por cada hombre y las herramientas o materiales que se utilizaron.<br />
+<span>Luego haga click en [Completar Tarea].</span><br />
+El sistema refrescará la O/T y la Tarea quedará completada con la fecha actual.
+</p>
+<img src="img/(34).png" />
+
+<p>
+<span>Para agregar una Nueva Tarea haga click en [Agregar Tarea], complete su Nombre, Descripción y haga click en [Agregar Tarea] nuevamente en la ventana que apareció.</span><br />
+Puede agregar tareas en cualquier posición, seleccionando previamente a agregarlas, la posición anterior a la que se quiere posicionar la nueva tarea.
+</p>
+<img src="img/(35).png" />
+
+<p>
+Luego la aplicación refrescará la O/T y la Nueva Tarea se visualizará en el Plan de Tareas.<br />
+<span>Nótese que esta acción no modifica el Plan de Tareas original, sino que la nueva tarea es agregada a una COPIA del Plan de Tareas asociado inicialmente para así poder ser afectado libremente y que el Plan de Tareas creado en un principio pueda ser asociado a otras O/Ts idénticamente como se lo concibió.</span>
+</p>
+<img src="img/(36).png" />
+
+<h4>Retrabajos</h4>
+<p>
+<span>Para Retrabajar una Tarea, seleccione la misma del listado de la O/T y haga click en [Retrabajar Tarea].<br />
+El sistema pedirá confirmación. Acepte para Retrabajar la tarea seleccionada.</span>
+</p>
+<img src="img/(37).png" />
+
+<p>
+Luego el sistema refrescará la O/T y una nueva Tarea será agregada debajo de la Tarea Retrabajada, registrando el Retrabajo correctamente opacando la Tarea en el listado.
+</p>
+<img src="img/(38).png" />
+
+<h4>Conclusiones</h4>
+<p>
+<span>Al momento de Concluír una O/T, habiendo o no completado todas sus Tareas, haga click en [Concluír O/T].</span>
+</p>
+<img src="img/(39).png" />
+
+<p>
+El sistema pedirá el motivo por el cual la O/T concluyó.<br />
+<span>Nótese que esta operación es IRREVERSIBLE. Confirme dos veces los datos antes de aceptar la operación.</span><br />
+Puede elegir entre tres opciones de conclusión: Internvención satisfactoria, Irreparabilidad u Otra, para la cual se puede agregar una observación.<br />
+<span>Para concluír la O/T, complete el fomulario y haga click en [Concluír O/T].</span><br />
+Luego, la O/T pasara a formar parte del Historial y dejará de aparecer en el listado de Auditoría.
+</p>
+<img src="img/(40).png" />
+
+<h3 id="title8">Materiales</h3>
+<p>
+El módulo de Materiales permite administrar tanto el Stock actual de Materiales como los Pédidos realizados.
+</p>
+
+<h4>Pedidos</h4>
+<p>
+Esta pantalla lista los Pedidos de Materiales a recibir. Los cuales se pueden administrar seleccionando cuáles se recibieron y cuáles no.
+</p>
+<img src="img/(41).png" />
+
+<p>
+<span>Para crear un nuevo Pedido de Material, haga click en [Crear Pedido].<br />
+Ingrese el Nº de O/T para el cual desea asociar el nuevo Pedido y haga click en [Seleccionar Tarea].<br />
+Luego la aplicación le pedirá que seleccione la Tarea relacionada a estos materiales a ser pedidos.</span><br />
+(En caso de estar relacionados a más de una Tarea se puede dejar seleccionada cualquiera y continuar con el Pedido sin problemas).
+</p>
+<img src="img/(42).png" />
+
+<p>
+A continuación se deben listar los Materiales que conformarán el Pedido en cuestión.<br />
+<span>Para agregar un nuevo Material, haga click en [Agregar Material].<br />
+Luego debe seleccionar la Categoría de Materiales a la que pertenece, su concepto, su cantidad/longitud/peso/etc y su unidad de cantidad/longitud/peso/etc.</span><br />
+Puede realizar este paso indefinidamente como también Eliminar materiales del pedido haciendo click en la cruz roja al lado de cada uno de ellos.
+</p>
+<img src="img/(43).png" />
+
+<p>
+Una vez creado el Pedido, aparecerá listado y al seleccionarlo se podrá ver su detalle.<br />
+Este detalle es editable, en el cual se pueden tildar los materiales ya recibidos.
+</p>
+<img src="img/(44).png" />
+
+<p>
+El Stock de Materiales representa el inventario de COOPERTEI.<br />
+<span>Para agregar un Material al Stock/inventario, complete su Nombre, seleccione la Categoría, su cantidad y unidad de medida.</span>
+</p>
+<img src="img/(45).png" />
+
+<p>
+Luego será posible editar la cantidad de ese Material que se encuentra disponible en Stock.<br />
+<span>Para ello, seleccione el Material deseado, modifique la cantidad y haga click en [Guardar].</span>
+</p>
+<img src="img/(46).png" />
+
+<p>
+En la siguiente pantalla se puede ver que la cantidad disponible de este Material se ha actualizado.<br />
+(En futuras versiones del sistema, el Stock se llenará automáticamente de Materiales al recibir los Pedidos).
+</p>
+<img src="img/(47).png" />
+
+<h3 id="title9">Consultas</h3>
+
+<p>
+En este módulo, se pueden consulta la productividad de los Empleados en base a los horarios invertidos en las Tareas de las O/Ts.
+</p>
+<img src="img/(48).png" />
+
+<p>
+<span>Para consultar la productividad de un Empleado en particular, selecciónelo del listado y haga click en [Graficar].</span><br />
+La aplicación calculará su historial de horas hombre invertidas históricamente.<br />
+<span>Nótese que es posible seleccionar varios Empleados al mismo tiempo y comparar en el mismo gráfico sus historiales.</span>
+</p>
+<img src="img/(49).png" />
+
+<p>
+En caso de necesitar precisión temporal, se puede hacer zoom en el gráfico.<br />
+<span>Para hacer zoom, haga click en dos zonas distintas del gráfico más pequeño ubicado debajo del principal, creando un segmento temporal sobre el cual se hará zoom para poder ver detalladamente el historial del Empleado.</span>
+</p>
+<img src="img/(50).png" />
+
+</div>
+
+</body>
+</html>
