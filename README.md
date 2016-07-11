@@ -1,5 +1,6 @@
 # coopsys
-Single-page, partially real-time, fully asynchronic closed network web application.
+
+This is a subgroup of files from a single-page, partially real-time, fully asynchronic closed network web application.
 
 The application is capable of auditioning the process industrial equipment go through, mainly related to refineries.
 
