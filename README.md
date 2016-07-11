@@ -2,6 +2,8 @@
 
 This is a subgroup of files from a single-page, partially real-time, fully asynchronic closed network web application.
 
+A userguide is available with screenshots in the repository.
+
 The application is capable of auditioning the process industrial equipment go through, mainly related to refineries.
 
 Its main feature is the creation of complex task plans, which offer a way to stay updated in relation to the equipment being constructed/repaired as well as the human and machine resources being implemented in the (sub)tasks of said plans.
