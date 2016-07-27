@@ -15,3 +15,12 @@ Another interesting feature is the way the application offers information to the
 This is a Single-Page, partially Real-Time, fully asynchronic web application.
 
 Node was not a safe bet, but it sure was fun!
+
+Multi (sub)tasks administration:
+
+![alt tag](https://raw.githubusercontent.com/leomdg/coopsys/master/userguide/img/(36).png)
+![alt tag](https://raw.githubusercontent.com/leomdg/coopsys/master/userguide/img/(38).png)
+
+Simple worker performance (based on hours and used materials per task):
+
+![alt tag](https://raw.githubusercontent.com/leomdg/coopsys/master/userguide/img/(49).png)
