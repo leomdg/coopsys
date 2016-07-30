@@ -18,9 +18,15 @@ Node was not a safe bet, but it sure was fun!
 
 Multi (sub)tasks administration:
 
+![alt tag](https://raw.githubusercontent.com/leomdg/coopsys/master/userguide/img/(33).png)
 ![alt tag](https://raw.githubusercontent.com/leomdg/coopsys/master/userguide/img/(36).png)
 ![alt tag](https://raw.githubusercontent.com/leomdg/coopsys/master/userguide/img/(38).png)
 
 Simple worker performance (based on hours and used materials per task):
 
 ![alt tag](https://raw.githubusercontent.com/leomdg/coopsys/master/userguide/img/(49).png)
+
+Staff hours:
+
+![alt tag](https://raw.githubusercontent.com/leomdg/coopsys/master/userguide/img/(16).png)
+
