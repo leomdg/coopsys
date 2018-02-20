@@ -1,6 +1,6 @@
 # coopsys (2011-2012)
 
-This is a subgroup of files from a single-page, partially real-time, fully asynchronic closed network web application.
+This is a subgroup of files from a single-page, partially real-time, fully asynchronic web application.
 
 A userguide is available with screenshots in the repository.
 
