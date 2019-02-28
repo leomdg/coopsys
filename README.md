@@ -25,8 +25,3 @@ Multi (sub)tasks administration:
 Simple worker performance (based on hours and used materials per task):
 
 ![alt tag](https://raw.githubusercontent.com/leomdg/coopsys/master/userguide/img/(49).png)
-
-Staff hours:
-
-![alt tag](https://raw.githubusercontent.com/leomdg/coopsys/master/userguide/img/(16).png)
-
