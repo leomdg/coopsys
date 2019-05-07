@@ -14,7 +14,7 @@ Another interesting feature is the way the application offers information to the
 
 This is a Single-Page, partially Real-Time, fully asynchronic web application.
 
-Node was not a safe bet, but it sure was fun!
+Node was not a safe bet at the time, but it sure was fun to surf to unstable dependencies.
 
 Multi (sub)tasks administration:
 
