@@ -1,6 +1,6 @@
 # CoopSys (2010-2012)
 
-This is a subgroup of files from a single-page, partially real-time, fully asynchronic web application, deployed on AWS.
+This is a subgroup of files from a single-page, partially real-time, fully asynchronic web application, supported by various Amazon Web Services.
 
 A userguide is available with screenshots in the repository.
 
