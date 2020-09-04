@@ -12,7 +12,7 @@
     "async": "~0.1.18",
     "moment": "~1.6.2",
     "markdown": "~0.3.1",
-    "sequelize": "~1.4.0",
+    "sequelize": "~6.3.5",
     "mysql": "~0.9.6",
     "socket.io": "~0.9.6",
     "browserify": "~1.10.12",
